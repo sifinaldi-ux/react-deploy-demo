@@ -1,83 +1,60 @@
+import "./App.css";
+
 function App() {
   return (
-    <div
-      style={{
-        maxWidth: "800px",
-        margin: "50px auto",
-        padding: "20px",
-        fontFamily: "Arial, sans-serif",
-        textAlign: "center",
-      }}
-    >
-      {/* Identitas */}
-      <h1>Penerapan Deployment & CI/CD pada React.js</h1>
+    <div className="container">
+      <div className="hero">
+        <h1>Penerapan Deployment & CI/CD pada React.js</h1>
+        <p>
+          Implementasi deployment aplikasi React menggunakan GitHub dan Vercel
+        </p>
+      </div>
 
-      <hr />
+      <div className="identity">
+        <h2>Identitas Mahasiswa</h2>
+        <p>
+          <b>Nama:</b> Singgih Finaldi
+        </p>
+        <p>
+          <b>NIM:</b> 2403040150
+        </p>
+      </div>
 
-      <h2>Identitas Mahasiswa</h2>
-      <p>
-        <strong>Nama:</strong> Singgih Finaldi
-      </p>
-      <p>
-        <strong>NIM:</strong> 2403040150
-      </p>
-      <p>
-        <strong>Kelas:</strong> Pemrograman Web Lanjut B2
-      </p>
-      <p>
-        <strong>Mata Kuliah:</strong> Pemrograman Web Lanjut
-      </p>
+      <div className="cards">
+        <div className="card">
+          <h3>⚛️ React.js</h3>
+          <p>Frontend Framework</p>
+        </div>
 
-      <hr />
+        <div className="card">
+          <h3>🐙 GitHub</h3>
+          <p>Version Control</p>
+        </div>
 
-      {/* Teknologi */}
-      <h2>Teknologi yang Digunakan</h2>
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li>⚛️ React.js</li>
-        <li>🐙 GitHub</li>
-        <li>▲ Vercel</li>
-      </ul>
+        <div className="card">
+          <h3>▲ Vercel</h3>
+          <p>Deployment Platform</p>
+        </div>
+      </div>
 
-      <hr />
+      <div className="flow">
+        <h2>Alur Deployment</h2>
+        <p>Code → GitHub → Vercel → Website Online</p>
+      </div>
 
-      {/* Alur Deployment */}
-      <h2>Alur Deployment</h2>
-      <p
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-        }}
-      >
-        Code → GitHub → Vercel → Website Online
-      </p>
-
-      <hr />
-
-      {/* Status */}
-      <h2>Status Deployment</h2>
-      <p>✅ Project React Berjalan</p>
-      <p>✅ Source Code Tersimpan di GitHub</p>
-      <p>✅ Deployment Berhasil</p>
-
-      <hr />
-
-      {/* Tombol GitHub */}
-      <h2>Repository GitHub</h2>
+      <div className="status">
+        <h2>Status</h2>
+        <p>✅ Project React Berjalan</p>
+        <p>✅ Source Code Tersimpan di GitHub</p>
+        <p>✅ Deployment Berhasil</p>
+      </div>
 
       <a
-        href="https://github.com/USERNAME/REPOSITORY"
+        href="https://github.com/sifinaldi-ux/react-deploy-demo"
         target="_blank"
         rel="noreferrer"
       >
-        <button
-          style={{
-            padding: "10px 20px",
-            fontSize: "16px",
-            cursor: "pointer",
-          }}
-        >
-          Lihat GitHub
-        </button>
+        <button>Lihat GitHub</button>
       </a>
     </div>
   );
